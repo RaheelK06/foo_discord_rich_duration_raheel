@@ -322,10 +322,9 @@ void PresenceModifier::UpdateDuration( double currentTime )
     }
 }
 
-void PresenceModifier::UpdateDuration( double currentTime, double totalLength )
+void PresenceModifier::UpdateDuration( double currentTime)
 {
     auto& pd = presenceData_;
-    pd.trackLength = totalLength;
     UpdateDuration( currentTime );
 }
 
